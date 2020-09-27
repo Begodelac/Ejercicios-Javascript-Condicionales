@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = window.prompt("Escribe tu nombre");
+        let ventas = parseInt(window.prompt("¿Cuánto dinero has facturado?"));
+        let extra = (ventas * 5)/100;
+
+        if (ventas > 500){
+            window.prompt(`
+            Hola ${name}, tus ventas ascienden a ${ventas} euros. Recibirás un extra de ${extra} euros.
+            `)
+        }else{
+            window.prompt(`
+            Hola ${name}, tus ventas ascienden a ${ventas} euros.
+            `)
+            }
+    </script>
+</body>
+</html>
