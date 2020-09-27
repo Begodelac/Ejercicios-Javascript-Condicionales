@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let edad = parseInt(window.prompt("¿Qué edad tienes?"));
+      let nombre;
+       let apellido;
+       let ciudad;
+       let dias;
+
+       let carnet;
+
+        if (edad >= 18){
+           carnet = window.prompt("¿Tienes carnet?");
+            if (carnet === "si"){
+
+               nombre = window.prompt("Escribe tu nombre");
+               apellido = window.prompt("Escribe tu apellido");
+               ciudad = window.prompt("Escribe la ciudad donde vives");
+               dias = parseInt(window.prompt("¿Cuántos días quieres alquilar el coche?"));
+
+               if (dias === 7){
+                   window.alert
+                   ("Nombre: " + nombre + ". Apellido: " + apellido + ". Ciudad: " + ciudad + ". El coche te costará 150€ toda la semana");
+               } else {
+                window.alert
+                   ("Nombre: " + nombre + ". Apellido: " + apellido + ". Ciudad: " + ciudad + ". El precio será de " + (dias*25)  + " euros");
+                }
+            } else {
+                window.alert("No puedes conducir");
+            }
+        } else {
+        window.alert("Eres menor de edad");
+        }
+    </script>
+  </body>
+</html>
