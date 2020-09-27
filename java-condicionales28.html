@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = window.prompt("Escribe un número de tres cifras");
+      num1 = num.substring(0, 1);
+      num2 = num.substring(1, 2);
+      num3 = num.substring(2);
+
+      if (num1 % 2 === 0 && num2 % 2 === 0 && num3 % 2 === 0) {
+        window.alert("Todas las cifras son pares");
+      } else if (num1 % 2 !== 0 && num2 % 2 !== 0 && num3 % 2 !== 0) {
+        window.alert("Todas las cifras son impares");
+      } else {
+        window.alert("El número tiene cifras pares e impares");
+      }
+    </script>
+  </body>
+</html>
