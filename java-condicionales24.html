@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let temperatura = parseInt(window.prompt("Escribe la temperatura que hace hoy"));
+       let opciones = window.prompt(`
+       Elige la opción para convertir los grados a:
+       C - Celsius
+       F - Fahrenheit
+       `).toUpperCase();
+
+        let celsius = ((temperatura * 9)/5) +32;
+        let fahrenheit = ((temperatura -32) * 5) / 9; 
+
+       switch (opciones){
+           case ("C") :
+           window.prompt(`La temperatura es ${celsius} grados celsius`)
+           break;
+
+           case ("F"):
+           window.prompt(`La tempertura es ${fahrenheit} grados fahrenheit`)
+       }
+    </script>
+</body>
+</html>
