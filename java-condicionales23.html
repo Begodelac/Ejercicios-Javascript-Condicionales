@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+                  let nota1 = parseInt(window.prompt("Escribe la nota del primer examen"));
+                  let nota2 = parseInt(window.prompt("Escribe la nota del segumdo examen"));
+                  let nota3 = parseInt(window.prompt("Escribe la nota del tercer examen"));
+
+                  let suma;
+
+                  if (nota1 > nota2){
+                     suma = nota1 + nota3;
+                  }else{
+                      suma = nota2 + nota3;
+                  }
+                  if (suma < 5){
+                      console.log(`la nota es ${suma}. Has suspendido`);
+                  } else if (suma < 6) {
+                    console.log(`La nota es ${suma}. Es un Suficiente`);
+
+                  } else if (suma < 7) {
+                    console.log(`La nota es ${suma}. Bien`);
+                  } else if (suma < 9) {
+                    console.log(`La nota es ${suma}. Notable`);
+                  } else if (suma < 10) {
+                    console.log(`La nota es ${suma}. Sobresaliente`);
+                   } else {
+                    console.log(`La nota es ${suma}. Matricula`);
+                } 
+    </script>
+  </body>
+</html>

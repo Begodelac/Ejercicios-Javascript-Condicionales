@@ -7,14 +7,13 @@
 </head>
 <body>
     <script>
-         let numerador = parseInt(numeradorString);
-         let denominador = parseInt(denominadorString);
-         console.log(numerador);
+         let numerador = parseInt(window.prompt("Escribe un número"));
+         let denominador = parseInt(window.prompt("Escribe otro número"));
+        
 
          if (denominador!==0){
              console.log(numerador/denominador);
-         }
-         if (denominador===0){
+         }else if (denominador===0){
              console.log("No se puede dividir por cero");
          }
     </script>

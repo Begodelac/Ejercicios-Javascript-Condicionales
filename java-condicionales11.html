@@ -7,8 +7,20 @@
   </head>
   <body>
     <script>
-    let num1 = parseInt(window.prompt("Escibe un número entero entre 25 y 75"));
-    let num2 = parseInt(window.prompt("Escibe otro número entero entre 25 y 75"));
+    let num1String = window.prompt("Escibe un número entero entre 25 y 75");
+    let num2String = window.prompt("Escibe otro número entero entre 25 y 75");
+   
+
+    if (num1String.substring(0, 1) === num2String.substring(0, 1)){
+      console.log("Hay un dígito común entre ellos");
+    }else if (num1String.substring(1) === num2String.substring(1)){
+      console.log("Hay un dígito común entre ellos");
+    }else if (num1String.substring(0, 1) === num2String.substring(1)){
+      console.log("Hay un dígito común entre ellos");
+    }else if (num1String.substring(1) === num2String.substring(0, 1)){
+      console.log("Hay un dígito común entre ellos");
+    }
+ 
     
     </script>
   </body>

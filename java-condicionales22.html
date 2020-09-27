@@ -9,18 +9,16 @@
     <script>
       let num = parseInt(window.prompt("Escribe un número"));
       let num2 = parseInt(window.prompt("Escribe otro número"));
-      console.log(num + num2);
-      console.log(num - num2);
-      console.log(num * num2);
-      console.log(num % num2);
-      console.log ((num+num2) / 2);
+      let num3 = parseInt(window.prompt("Escribe otro número"));
 
-      if (num < num2)
-       {
-        console.log (num2 + " es el mayor");
-       } else if (num > num2){
-        console.log( num + " es el menor");
-       }
+      if (num < num2) {
+          window.alert(num);
+      }else if (num < num3) { 
+          window.alert(num);
+          if (num2 < num)
+          window.alert(num);
+      }
+
     </script>
   </body>
 </html>

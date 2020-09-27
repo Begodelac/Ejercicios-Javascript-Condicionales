@@ -8,8 +8,13 @@
   <body>
     <script>
       let temperatura = parseInt(
-        window.prompt("¿Qué temperatura hace hoy en Bilbao?")
-      );
+        window.prompt("¿Qué temperatura hace hoy en Bilbao?"));
+        if (temperatura > 40)
+      {
+        console.log("Vete a otro sitio");
+      }else if (temperatura < 10){
+        console.log("Vete a otro sitio");
+      }
       switch (temperatura) {
         case 0:
         case 1:
@@ -64,10 +69,7 @@
           console.log("Enciende el aire acondicionado");
           break;
       }
-      if (temperatura > 40);
-      {
-        console.log("Vete a otro sitio");
-      }
+     
     </script>
   </body>
 </html>

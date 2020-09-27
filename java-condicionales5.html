@@ -7,30 +7,33 @@
   </head>
   <body>
     <script>
-      let dia = window.prompt("Escribe undía de la semana");
-      if (dia === "lunes"){
-          console.log(dia);
-      }
-      if (dia === "martes"){
-          console.log(dia);
-      }
-      if (dia === "miercoles"){
-          console.log(dia);
-      }
-      if (dia === "jueves"){
-          console.log(dia);
-      }
-      if (dia === "viernes"){
-          console.log(dia);
-      }
-      if (dia === "sábado"){
-          console.log("Es fin de semana");
-      }
-      if (dia === "sábado"){
-          console.log("Es fin de semana");
-      }else{
-          console.log("Te has equivocado")
-      }
+        let dia = window.prompt("Escribe undía de la semana");
+        switch (dia){
+          case ("lunes"): console.log("Hoy es " + dia);
+          case ("martes"): console.log("Hoy es " + dia);
+          case ("miercoles"): console.log("Hoy es " + dia);
+          case ("jueves"): console.log("Hoy es " + dia);
+          case ("viernes"): console.log("Hoy es " + dia);
+          case ("sábado"): console.log("Te has equivocado");
+          case ("domingo"): console.log("Te has equivocado");
+        }
+        // if (dia === "lunes"){
+        //     console.log("Hoy es " + dia);
+        // }else if (dia === "martes"){
+        //     console.log("Hoy es " + dia);
+        // } else if (dia === "miercoles"){
+        //     console.log("Hoy es " + dia);
+        // }else if (dia === "jueves"){
+        //     console.log("Hoy es " + dia);
+        // }else if (dia === "viernes"){
+        //     console.log("Hoy es " + dia);
+        // }else if (dia === "sábado"){
+        //     console.log("Es fin de semana");
+        // }else if (dia === "sábado"){
+        //     console.log("Es fin de semana");
+        // }else{
+        //     console.log("Te has equivocado")
+        // }
     </script>
   </body>
 </html>
