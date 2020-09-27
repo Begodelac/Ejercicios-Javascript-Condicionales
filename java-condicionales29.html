@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let frase = window.prompt("Dile algo a Bob");
+      if (
+        frase.substring(frase.length - 1 === "?") 
+      ) {
+        console.log("¡Claro!");
+      } else if (frase.substring(frase.length - 1) === "!") {
+        console.log("¡Eh, tranquilizate!");
+      } else if (frase.substring(frase.length - 2) === "!?") {
+        console.log("¡Eh, tranquilízate! Yo sé lo que hago.");
+      } else if (frase.length === 0) {
+        console.log("Vale con que esas tenemos...");
+      } else {
+        console.log("Sin más");
+      }
+    </script>
+  </body>
+</html>
